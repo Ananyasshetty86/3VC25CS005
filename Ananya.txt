@@ -248,4 +248,25 @@ To https://github.com/Ananyasshetty86/3VC25CS005.git
    828648e..742b74a  main -> main
 
 
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git add Ananya.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git commit -m "Updated Ananya file"
+[main 070eb43] Updated Ananya file
+ 1 file changed, 36 insertions(+)
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 554 bytes | 554.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ananyasshetty86/3VC25CS005.git
+   742b74a..070eb43  main -> main
+
+
 
