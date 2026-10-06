@@ -1,0 +1,215 @@
+DELL@DESKTOP-L9T1THN MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   ANANYA/                       eclipse-inst-jre-win64.exe*
+ 34/             'System Volume Information'/
+
+DELL@DESKTOP-L9T1THN MINGW64 /d
+$ cd ANANYA
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA (master)
+$ git init
+Reinitialized existing Git repository in D:/ANANYA/.git/
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA (master)
+$ git clone https://github.com/Ananyasshetty86/3VC25CS005.git
+fatal: destination path '3VC25CS005' already exists and is not an empty directory.
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA (master)
+$ ls
+3VC25CS005/
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA (master)
+$ cd 3VC25CS005
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git config --global user.name "Ananyasshetty86"
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git config --global user.email "ananyasshetty86@gmail.com"
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ touch hello.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git add hello.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git commit -m "p1"
+[main 8b68548] p1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 224 bytes | 224.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ananyasshetty86/3VC25CS005.git
+   ebe98bc..8b68548  main -> main
+
+
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ vi one.c
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ ls
+README.md  hello.txt  hi.txt  lab1.txt  one.c
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$  git add one.c
+warning: in the working copy of 'one.c', LF will be replaced by CRLF the next time Git touches it
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git commit -m "create one.c"
+[main 828648e] create one.c
+ 1 file changed, 1 insertion(+)
+ create mode 100644 one.c
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git branch b1
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git branch b2
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git branch
+  b1
+  b2
+* main
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git checkout b1
+Switched to branch 'b1'
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b1)
+$ echo "in branch b1 Hello world" >> lab3.c
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b1)
+$ git add lab3.c
+warning: in the working copy of 'lab3.c', LF will be replaced by CRLF the next time Git touches it
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b1)
+$ git commit -m "lab3 for b1"
+[b1 344e6e3] lab3 for b1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab3.c
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b1)
+$ git checkout b2
+Switched to branch 'b2'
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git merge b1
+Updating 828648e..344e6e3
+Fast-forward
+ lab3.c | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab3.c
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git branch -d b1
+Deleted branch b1 (was 344e6e3).
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ananyasshetty86/3VC25CS005.git
+   8b68548..828648e  main -> main
+
+
+
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ vi index.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git add index.txt
+warning: in the working copy of 'index.txt', LF will be replaced by CRLF the next time Git touches it
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git commit -m "create index file"
+[b2 762e69e] create index file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git branch feature
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (b2)
+$ git checkout feature
+Switched to branch 'feature'
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ vi index.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git stash
+warning: in the working copy of 'index.txt', LF will be replaced by CRLF the next time Git touches it
+Saved working directory and index state WIP on feature: 762e69e create index file
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git stash pop
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (ffa70c19597fce87870950b7da1c92b4b3abb66f)
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git add index.txt
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git commit -m "create index file changed in feature
+> ^C
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git commit -m "create index file changed in feature"
+[feature 6edb84a] create index file changed in feature
+ 1 file changed, 1 insertion(+)
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git push origin main
+Everything up-to-date
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+DELL@DESKTOP-L9T1THN MINGW64 /d/ANANYA/3VC25CS005 (main)
+$ git push origin main
+Everything up-to-date
